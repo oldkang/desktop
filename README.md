@@ -22,3 +22,5 @@
 ## 双击
 1.双击文字重命名
 
+
+![image](http://oldkang.com/resume/images/desk/desk-img.jpg)
