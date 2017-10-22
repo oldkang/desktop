@@ -1,0 +1,149 @@
+@charset "utf-8";
+html,body{
+	height: 100%;
+	background: url(../img/recycle_bin_full.png) -1000px;
+}
+body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background:url(../img/bg-4k.jpg) repeat-x center center ;
+	background-size: cover;
+	background-color: #d6c9b5;
+}
+ul,li,p{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/*文件夹*/
+#contextmenu,#contextmenu ul{
+	display: none;
+	position: absolute;
+	width: 200px;
+	left: 200px;
+	border: 1px solid #fff;
+	top: -1px;
+	border-radius: 5px;
+	box-shadow: 0 1px 8px #8f979e;
+	color: #5f5f5f;
+	z-index: 1;
+	background: rgb(247, 247, 247);
+}
+#contextmenu li{
+	text-indent: 10px;
+	line-height: 35px;
+	position: relative;
+	border-bottom:1px solid rgb(204, 204, 204);
+}
+#contextmenu li:last-child{
+	border-bottom: none;
+}
+#contextmenu li:hover,#contextmenu li.active{
+	background: #d0bfa5;
+    color: #fff;
+}
+#contextmenu li.arrow:before{
+	position: absolute;
+	content: '';
+	border-bottom:5px solid transparent ;
+	border-top:5px solid transparent ;
+	border-left:5px solid #48210d;
+	right: 10px;
+    top: 50%;
+    margin-top: -5px;
+}
+#contextmenu ul{
+	width: 150px;
+}
+#list li{
+	/*margin: 20px;*/
+	position: absolute;
+	width: 85px;
+	height: 85px;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	background: url(../img/file.png) no-repeat;
+	cursor: pointer;
+}
+#list li p{
+	width: 70px;
+    height: 70px;
+    margin: 8px;
+    display: none;
+}
+#list li.wasteBasket{
+	background: url(../img/recycle_bin_empty.png) no-repeat center;
+	background-size:75% ;
+}
+#list li.wasteBasket.full{
+	background-image: url(../img/recycle_bin_full.png);
+}
+#list li.floder {
+    background-position: 10px 10px;
+}
+#list li.txt {
+    background-position: -104px -215px;
+}
+#list li.html {
+    background-position:  -900px -898px;
+}
+#list li.img {
+    background-position: 9px -328px;
+}
+#list li.mp3 {
+    background-position: 9px -670px;
+}
+#list li.mp4 {
+    background-position: -219px -441px;
+}
+
+.fileName,#list li input {
+	position: absolute;
+	color: #fff;
+	left: 0;
+	top: 88px;
+	width: 100%;
+	font: 12px/20px Arial,"宋体";
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-shadow: 0px 1px 5px #000;
+}
+#list li.active {
+	border:1px solid #8c8c8c;
+	background-color: rgba(255,255,255,.8);
+}
+#list li.hover {
+	border: 1px solid #fff;
+	background-color: rgba(255,255,255,.8);
+}
+#list li input{
+	background: none;
+	display: none;
+	border: none;
+}
+
+/*上传文件*/
+#toFiles input[type = "file"]{ 
+	position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+#toFiles label{
+	width: 100%;
+	line-height: 36px;
+    display: block;
+    position: relative;
+}
+
+
+
+
+
+
